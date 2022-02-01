@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import React from 'react';
+import GithubImage from 'C:/project/app-name/src/GitHub-Mark.png';
 import './App.css';
 
 function App() {
@@ -17,11 +19,20 @@ function App() {
                  Search
                </button>
              </span>
-
-             
            </div>
          </div>
        </form>
+       <div className='py-5'>
+         <img src={GithubImage} 
+         className='responsive rounded-circle' 
+         alt="" 
+         height='200px'
+         />
+         <h1 className='pt-5'>
+           <a href="https://github.com/CrisMai" target='_new'>Cristiane Mai</a>
+         </h1>
+         <h3>Palhoça-SC</h3>
+       </div>
     </div>
   );
 }
